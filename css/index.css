@@ -167,7 +167,7 @@ footer {
 @media (max-width: 800px) {
     /* Top Of Page Including Navagation Bar */
     body {
-        width: 780px;
+        max-width: 780px;
         background-color: papayawhip;
     }
 
@@ -200,22 +200,31 @@ footer {
     body {
         max-width: 480px;
         background: pink;
+        margin-left: unset;
+        margin-top: unset;
     }
 
-    nav a {
+    nav {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
+    nav a {
+        display: flex;
+        justify-content: center;
+    }
+
     .topText {
         display: flex;
         flex-direction: column;
-        margin-bottom: 25%;
+        margin-bottom: 25%; /* keeping middle-img from covering "about" paragraph */
+        margin-left: 2%;
     }
 
     .middle-img {
         width: 480px;
+        margin-left: 1%;
     }
 
     .bottomText {
@@ -225,5 +234,9 @@ footer {
 
     .paragraphs , .bottomText .paragraphs{
         width: 85%;
+    }
+
+    .contact {
+        margin-left: 2%;
     }
 }
